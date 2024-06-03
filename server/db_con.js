@@ -1,7 +1,7 @@
 import { MongoClient } from "mongodb";
 
-// const uri = "mongodb://localhost:27017";
-const uri = "mongodb+srv://admin_A:iahzi@cluster1.lswho0i.mongodb.net/?retryWrites=true&w=majority&appName=cluster1"
+const uri = "mongodb://localhost:27017";
+// const uri = "mongodb+srv://admin_A:iahzi@cluster1.lswho0i.mongodb.net/?retryWrites=true&w=majority&appName=cluster1"
 const dbName = "todos"
 //let client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 let client = new MongoClient(uri);
