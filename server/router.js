@@ -3,6 +3,10 @@ import {openDBConnection} from './db_con.js';
 
 const router = express.Router();
 
+router.get('/', (req,res)=>{
+    res.send("server is running");
+})
+
 router.get('/items', async (req,res)=>{
     try {
         const dbo = await openDBConnection(); // Await the result of openDBConnection
